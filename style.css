@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #f0e0c8;
+}
+
+#nav {
+  background: linear-gradient(to right, #ff6381, #4d4d4d);
+  color: #f9c8b2;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .9);
+  /* Subtle box shadow */
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: color 0.3s;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+  /* Playful font */
+}
+
+.nav-item:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  font-family: 'Arial';
+
+}
+
+#nav.scrolled {
+  background: linear-gradient(to right, black, purple);
+}
+
+#nav.scrolled .nav-item {
+  font-family: 'Arial';
+}
+
+#nav.scrolled .nav-item:hover {
+  color: #caaef8;
+  border-bottom: 2px solid #caaef8;
+}
+
+.main-content {
+  padding: 50px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.main-content h1 {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  color: #555;
+  font-size: 18px;
+}
+
+
+/* Styles for the sections corresponding to the menu items */
+
+#item1,
+#item2,
+#item3,
+#item4 {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Transparent white background */
+  border-radius: 5px;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+#item1 h1,
+#item2 h1,
+#item3 h1,
+#item4 h1 {
+  color: #000;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+#item1 p,
+#item2 p,
+#item3 p,
+#item4 p {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Comic Sans MS', cursive;
+}
